@@ -1,31 +1,29 @@
-GovAssist AI is a web application that helps users explore government jobs, schemes, and quizzes, powered by an AI chatbot.
+# GovAssist-AI
 
----
+## 📌 Description
+Write a short description of your project.
+Example: This project is a web application built using Node.js.
 
-## 📌 Features
-
-- 📊 Government Jobs Information
-- 🏛️ Government Schemes Details
-- 🧠 Quiz APIs for practice
-- 🤖 AI Chatbot (OpenAI powered)
-
----
+## 🚀 Features
+- Feature 1
+- Feature 2
+- Feature 3
 
 ## 🛠️ Tech Stack
-
-### Frontend
-- HTML, CSS, JavaScript (or React)
-
-### Backend
 - Node.js
 - Express.js
-
-### Database
-- MongoDB
-
-### APIs
-- OpenAI API
-
----
+- HTML, CSS, JavaScript
 
 ## 📂 Project Structure
+/project-folder
+│── index.js
+│── package.json
+│── README.md
+│── /public
+│── /routes
+
+## ⚙️ Installation
+
+1. Clone the repository
+```bash
+https://vishnunagabelli-star.github.io/GovAssist-AI/
