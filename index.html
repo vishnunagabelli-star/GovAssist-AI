@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GovAssist AI | AI-Powered Exam Prep & Job Updates</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="container nav-content">
+            <div class="logo">
+                <i data-lucide="award"></i> GovAssist <span>AI</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#mock-tests">Mock Tests</a></li>
+                <li><a href="#jobs">Job Alerts</a></li>
+                <li><a href="#updates">Daily Updates</a></li>
+                <li><a href="#schemes">Schemes</a></li>
+            </ul>
+            <div class="nav-actions">
+                <button class="btn btn-outline" id="theme-toggle">
+                    <i data-lucide="moon"></i>
+                </button>
+                <a href="#login" class="btn btn-primary">Login</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero" id="home">
+        <div class="container">
+            <h1>Crack Your Dream Gov Job <br>with AI Intelligence</h1>
+            <p>Personalized guidance for RRB, SSC, UPSC, and Banking exams. Simple, smart, and effective preparation at your fingertips.</p>
+            <div class="flex-center gap-4">
+                <a href="#mock-tests" class="btn btn-secondary">Start Free Mock Test</a>
+                <a href="#jobs" class="btn btn-outline">Explore Job Alerts</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Quick Stats / Core Features -->
+    <main class="container">
+        <section class="card-grid" id="features">
+            <div class="card">
+                <i data-lucide="message-square" style="color: var(--primary-saffron); margin-bottom: 1rem;"></i>
+                <h3>AI GovBot</h3>
+                <p>Instant answers to your exam doubts, syllabus queries, and strategy planning.</p>
+            </div>
+            <div class="card">
+                <i data-lucide="file-text" style="color: var(--primary-green); margin-bottom: 1rem;"></i>
+                <h3>Mock Test Engine</h3>
+                <p>Full-length tests for RRB NTPC, SSC CGL with detailed performance analysis.</p>
+            </div>
+            <div class="card">
+                <i data-lucide="bell" style="color: var(--accent-navy); margin-bottom: 1rem;"></i>
+                <h3>Real-time Alerts</h3>
+                <p>Never miss a notification for UPSC, Banking, and Railway jobs.</p>
+            </div>
+        </section>
+
+        <!-- Mock Tests Section -->
+        <section id="mock-tests" class="section">
+            <div class="section-title">
+                <h2>Ready for the Real Test?</h2>
+                <p>Simulate exam environments with our AI-enhanced Mock Tests.</p>
+            </div>
+            <div id="test-categories" class="card-grid"></div>
+        </section>
+
+        <!-- Job Alerts Section -->
+        <section id="jobs" class="section">
+            <div class="section-title">
+                <h2>Latest Job Notifications</h2>
+                <p>Stay updated with the latest government job openings across India.</p>
+            </div>
+            <div class="job-container">
+                <div class="job-filters">
+                    <button class="filter-btn active" data-filter="all">All</button>
+                    <button class="filter-btn" data-filter="central">Central</button>
+                    <button class="filter-btn" data-filter="railway">Railway</button>
+                    <button class="filter-btn" data-filter="banking">Banking</button>
+                    <button class="filter-btn" data-filter="state">State (TS/AP)</button>
+                </div>
+                <div id="job-list" class="job-list">
+                    <!-- Job items will be injected here -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Daily Updates Section -->
+        <section id="updates" class="section">
+            <div class="section-title">
+                <h2>Daily Current Affairs</h2>
+                <p>Quick bites of information to keep you ahead in your preparation.</p>
+            </div>
+            <div id="updates-grid" class="card-grid">
+                <!-- Update cards will be injected here -->
+            </div>
+            <div class="flex-center" style="margin-top: 2rem;">
+                <button class="btn btn-secondary">Download 6-Month PDF Digest</button>
+            </div>
+        </section>
+
+        <!-- Government Schemes Section -->
+        <section id="schemes" class="section">
+            <div class="section-title">
+                <h2>Government Schemes</h2>
+                <p>Learn about benefits, eligibility, and how to apply for major PM Yojanas.</p>
+            </div>
+            <div id="schemes-grid" class="card-grid">
+                <!-- Scheme cards injected here -->
+            </div>
+        </section>
+
+        <!-- AI Resume Builder Section -->
+        <section id="resume" class="section">
+            <div class="section-title">
+                <h2>AI Resume Builder</h2>
+                <p>Create a professional resume tailored for government and private sectors in minutes.</p>
+            </div>
+            <div class="resume-hero">
+                <div class="resume-card">
+                    <div class="resume-steps" id="resume-steps">
+                        <div class="step active" data-step="1">1. Personal Info</div>
+                        <div class="step" data-step="2">2. Education</div>
+                        <div class="step" data-step="3">3. Work Experience</div>
+                    </div>
+                    <form id="resume-form" class="resume-form">
+                        <div class="form-step" id="step-1">
+                            <div class="input-group">
+                                <label>Full Name</label>
+                                <input type="text" placeholder="e.g. Shiva Prasad">
+                            </div>
+                            <div class="input-group">
+                                <label>Email Address</label>
+                                <input type="email" placeholder="e.g. shiva@example.com">
+                            </div>
+                        </div>
+                        <div class="flex-center" style="margin-top: 2rem;">
+                            <button type="button" class="btn btn-primary">Next Step</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-grid">
+            <div class="footer-about">
+                <div class="logo" style="color: white; margin-bottom: 1rem;">
+                    <i data-lucide="award"></i> GovAssist <span style="color: var(--primary-saffron)">AI</span>
+                </div>
+                <p style="color: rgba(255,255,255,0.6); font-size: 0.9rem;">Empowering Indian youth with smart AI-driven exam preparation and real-time job notifications.</p>
+            </div>
+            <div class="footer-links">
+                <h4>Exams</h4>
+                <ul>
+                    <li><a href="#">Railway (RRB)</a></li>
+                    <li><a href="#">SSC CGL/CHSL</a></li>
+                    <li><a href="#">Banking (IBPS/SBI)</a></li>
+                    <li><a href="#">UPSC / State PCS</a></li>
+                </ul>
+            </div>
+            <div class="footer-links">
+                <h4>Support</h4>
+                <ul>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Contact Support</a></li>
+                    <li><a href="#">Sitemap</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="container footer-bottom">
+            <p>&copy; 2026 GovAssist AI. All rights reserved. Built with ❤️ for India.</p>
+        </div>
+    </footer>
+
+    <!-- Quiz Modal -->
+    <div id="quiz-modal" class="modal hidden">
+        <div class="modal-content quiz-engine">
+            <div class="quiz-header">
+                <h3 id="quiz-title">Mock Test</h3>
+                <div class="quiz-timer"><i data-lucide="clock"></i> <span id="timer">60:00</span></div>
+            </div>
+            <div class="quiz-body">
+                <div id="question-container">
+                    <!-- Questions injected here -->
+                </div>
+            </div>
+            <div class="quiz-footer">
+                <button class="btn btn-outline" id="prev-btn">Previous</button>
+                <div class="quiz-progress">Question <span id="curr-q">1</span>/10</div>
+                <button class="btn btn-primary" id="next-btn">Next</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Chatbot FAB -->
+    <div class="chatbot-fab" id="chatbot-fab">
+        <i data-lucide="bot"></i>
+    </div>
+
+    <script src="script.js"></script>
+    <script>
+        // Initialize Lucide Icons
+        lucide.createIcons();
+    </script>
+</body>
+</html>
